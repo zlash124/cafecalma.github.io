@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Calma — Pucón | Café Artesanal, Bienestar y Naturaleza</title>
+  <meta name="description" content="Café Calma en Pucón: un refugio de café artesanal, bienestar y conexión con la naturaleza. Descubre nuestro espacio de calma, menú consciente y experiencias únicas." />
+  <meta name="keywords" content="café Pucón, café artesanal, bienestar, naturaleza, slow living, cowork Pucón, yoga Pucón" />
+  <meta name="author" content="Café Calma" />
+
+  <!-- Security Headers (A05: Security Misconfiguration) -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self';
+    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https://scontent-scl3-1.cdninstagram.com;
+    frame-src https://www.google.com;
+    connect-src 'self';
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+    frame-ancestors 'none';
+  " />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Café Calma — Pucón" />
+  <meta property="og:description" content="Un refugio de café artesanal, bienestar y conexión con la naturaleza en Pucón." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/hero.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/images/profile.jpg" alt="Logo Café Calma" class="logo-img" />
+        <span class="logo-text">Café Calma</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Inicio</a></li>
+        <li><a href="#about" class="nav-link">Nosotros</a></li>
+        <li><a href="#menu" class="nav-link">Menú</a></li>
+        <li><a href="#experience" class="nav-link">Experiencia</a></li>
+        <li><a href="#gallery" class="nav-link">Galería</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-content">
+      <span class="hero-tag reveal">Pucón, Chile</span>
+      <h1 class="hero-title reveal">
+        Donde la calma<br />
+        <span class="hero-accent">se sirve en taza</span>
+      </h1>
+      <p class="hero-subtitle reveal">Cafetería de especialidad en Costanera Playa Grande, Pucón. 🐾 Petfriendly.</p>
+      <div class="hero-cta reveal">
+        <a href="#menu" class="btn btn-primary">Descubre Nuestro Menú</a>
+        <a href="#about" class="btn btn-outline">Nuestra Historia</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Descubre</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ ABOUT ═══════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Sobre Nosotros</span>
+        <h2 class="section-title">Un espacio nacido de<br /><span class="accent">la conexión con la tierra</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <img src="assets/images/cafe-terraza.png" alt="Taza Calma en la terraza con vista al lago en Pucón" loading="lazy" />
+          </div>
+          <div class="image-accent-box"></div>
+        </div>
+        <div class="about-content reveal">
+          <h3 class="about-heading">Nuestra Historia</h3>
+          <p>Café Calma nació del sueño de crear un espacio donde el tiempo se detiene y la naturaleza envuelve cada momento. Ubicados en el corazón de Pucón, rodeados de bosques nativos y con la majestuosidad del volcán Villarrica como telón de fondo, creamos un refugio para quienes buscan reconectar.</p>
+          <p>Aquí cada taza cuenta una historia: granos seleccionados de origen, tostados con dedicación, servidos con amor. Más que un café, somos una experiencia de bienestar.</p>
+
+          <div class="philosophy-cards">
+            <div class="philosophy-card">
+              <div class="philosophy-icon">🌿</div>
+              <h4>Sustentabilidad</h4>
+              <p>Productos locales, envases biodegradables y prácticas conscientes con el medio ambiente.</p>
+            </div>
+            <div class="philosophy-card">
+              <div class="philosophy-icon">🤝</div>
+              <h4>Comunidad</h4>
+              <p>Apoyamos productores locales y creamos espacios de encuentro para la comunidad.</p>
+            </div>
+            <div class="philosophy-card">
+              <div class="philosophy-icon">🕊️</div>
+              <h4>Slow Living</h4>
+              <p>Creemos en el arte de vivir despacio, savoreando cada momento con presencia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MENU ═══════════════════ -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestro Menú</span>
+        <h2 class="section-title">Sabores que nutren<br /><span class="accent">cuerpo y alma</span></h2>
+      </div>
+
+      <div class="menu-categories reveal">
+        <button class="menu-tab active" data-category="all">Todo</button>
+        <button class="menu-tab" data-category="coffee">Café</button>
+        <button class="menu-tab" data-category="drinks">Bebidas</button>
+        <button class="menu-tab" data-category="food">Saludable</button>
+        <button class="menu-tab" data-category="artisan">Artesanal</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+        <!-- Coffee -->
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-badge">Favorito</div>
+          <div class="menu-card-icon">☕</div>
+          <h3>Espresso de Origen</h3>
+          <p>Granos seleccionados de la región, tostado medio con notas de chocolate y frutos rojos.</p>
+          <span class="menu-price">$2.500</span>
+        </div>
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-icon">🥛</div>
+          <h3>Latte Artesanal</h3>
+          <p>Espresso con leche vaporizada y arte latte. Disponible con leche de avena o almendra.</p>
+          <span class="menu-price">$3.200</span>
+        </div>
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-icon">🍫</div>
+          <h3>Mocha Volcánico</h3>
+          <p>Espresso con chocolate artesanal local y leche cremosa. Un abrazo en taza.</p>
+          <span class="menu-price">$3.800</span>
+        </div>
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-icon">❄️</div>
+          <h3>Cold Brew Bosque</h3>
+          <p>Café macerado 24 horas en frío, con toques de menta nativa y miel de ulmo.</p>
+          <span class="menu-price">$3.500</span>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-card reveal" data-category="drinks">
+          <div class="menu-card-icon">🍵</div>
+          <h3>Matcha Ceremonial</h3>
+          <p>Matcha de grado ceremonial batido a mano, con leche de avena y un toque de vainilla.</p>
+          <span class="menu-price">$3.600</span>
+        </div>
+        <div class="menu-card reveal" data-category="drinks">
+          <div class="menu-card-icon">🌿</div>
+          <h3>Infusión del Bosque</h3>
+          <p>Hierbas nativas recolectadas localmente: menta, cedrón, melisa. Calma en cada sorbo.</p>
+          <span class="menu-price">$2.200</span>
+        </div>
+        <div class="menu-card reveal" data-category="drinks">
+          <div class="menu-card-icon">🥤</div>
+          <h3>Smoothie Villarrica</h3>
+          <p>Berries locales, plátano, espinaca y semillas de chía. Energía pura y natural.</p>
+          <span class="menu-price">$4.000</span>
+        </div>
+        <div class="menu-card reveal" data-category="drinks">
+          <div class="menu-card-icon">🍋</div>
+          <h3>Limonada de Jengibre</h3>
+          <p>Limones frescos, jengibre rallado y miel de abeja local. Refrescante y revitalizante.</p>
+          <span class="menu-price">$2.800</span>
+        </div>
+
+        <!-- Food -->
+        <div class="menu-card reveal" data-category="food">
+          <div class="menu-card-badge">Nuevo</div>
+          <div class="menu-card-icon">🥑</div>
+          <h3>Tostada de Aguacate</h3>
+          <p>Pan masa madre, aguacate fresco, huevo poché, semillas y microgreens del huerto.</p>
+          <span class="menu-price">$5.500</span>
+        </div>
+        <div class="menu-card reveal" data-category="food">
+          <div class="menu-card-icon">🥗</div>
+          <h3>Bowl Energético</h3>
+          <p>Quinoa, verduras asadas de temporada, hummus casero y aderezo de tahini.</p>
+          <span class="menu-price">$6.200</span>
+        </div>
+        <div class="menu-card reveal" data-category="food">
+          <div class="menu-card-icon">🫐</div>
+          <h3>Açaí Bowl</h3>
+          <p>Açaí orgánico con granola artesanal, frutas frescas, coco rallado y miel local.</p>
+          <span class="menu-price">$5.800</span>
+        </div>
+
+        <!-- Artisan -->
+        <div class="menu-card reveal" data-category="artisan">
+          <div class="menu-card-icon">🍯</div>
+          <h3>Miel de Ulmo</h3>
+          <p>Miel pura del sur de Chile. Producción artesanal de apicultores locales.</p>
+          <span class="menu-price">$6.500</span>
+        </div>
+        <div class="menu-card reveal" data-category="artisan">
+          <div class="menu-card-icon">🫘</div>
+          <h3>Café en Grano 250g</h3>
+          <p>Nuestro blend exclusivo para llevar. Tostado semanal, notas de caramelo y nuez.</p>
+          <span class="menu-price">$7.900</span>
+        </div>
+        <div class="menu-card reveal" data-category="artisan">
+          <div class="menu-card-icon">🍪</div>
+          <h3>Galletas Artesanales</h3>
+          <p>Horneadas diariamente. Avena, miel y chips de chocolate belga. Pack de 6 unidades.</p>
+          <span class="menu-price">$3.800</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MENU IMAGE DIVIDER ═══════════════════ -->
+  <div class="parallax-divider">
+    <img src="assets/images/cafe-branding.png" alt="Vaso Calma coffee & shop con granos de café" loading="lazy" />
+    <div class="parallax-overlay">
+      <blockquote class="parallax-quote reveal">
+        "La calma no se encuentra, se cultiva<br />— una taza a la vez."
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Experiencia</span>
+        <h2 class="section-title">Más que un café,<br /><span class="accent">un estilo de vida</span></h2>
+      </div>
+
+      <div class="experience-grid">
+        <div class="experience-main reveal">
+          <div class="image-frame">
+            <img src="assets/images/hero.png" alt="Desayuno con vista al lago en Café Calma" loading="lazy" />
+          </div>
+        </div>
+        <div class="experience-cards">
+          <div class="experience-card reveal">
+            <div class="exp-card-number">01</div>
+            <div class="exp-card-content">
+              <h3>Espacio Cowork</h3>
+              <p>WiFi de alta velocidad, enchufes en cada mesa y un ambiente que inspira productividad consciente. Trabaja rodeado de naturaleza.</p>
+            </div>
+          </div>
+          <div class="experience-card reveal">
+            <div class="exp-card-number">02</div>
+            <div class="exp-card-content">
+              <h3>Yoga & Meditación</h3>
+              <p>Sesiones semanales de yoga al amanecer y meditación guiada en nuestro deck con vista al volcán.</p>
+            </div>
+          </div>
+          <div class="experience-card reveal">
+            <div class="exp-card-number">03</div>
+            <div class="exp-card-content">
+              <h3>Talleres & Encuentros</h3>
+              <p>Catas de café, talleres de cerámica, charlas de bienestar y encuentros comunitarios cada mes.</p>
+            </div>
+          </div>
+          <div class="experience-card reveal">
+            <div class="exp-card-number">04</div>
+            <div class="exp-card-content">
+              <h3>Relajación Total</h3>
+              <p>Rincones de lectura, música ambiental, aromaterapia sutil y un jardín para desconectar del mundo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ GALLERY ═══════════════════ -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Galería</span>
+        <h2 class="section-title">Momentos de<br /><span class="accent">calma capturados</span></h2>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <div class="gallery-item gallery-item-large">
+          <img src="assets/images/hero.png" alt="Desayuno con vista al lago Villarrica" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Cafecito con Vista</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/cafe-terraza.png" alt="Taza Calma en terraza" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Nuestra Terraza</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/cafe-branding.png" alt="Vaso Calma con granos de café" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Café de Especialidad</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/french-toast.png" alt="French toast con berries y banana" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Delicias del Menú</span>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item-wide">
+          <img src="assets/images/tostada-artesanal.png" alt="Tostada artesanal con ingredientes frescos" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Sabor Artesanal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ INSTAGRAM ═══════════════════ -->
+  <section class="section instagram-section">
+    <div class="container">
+      <div class="instagram-banner reveal">
+        <div class="instagram-content">
+          <div class="instagram-icon">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <circle cx="12" cy="12" r="5"></circle>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"></circle>
+            </svg>
+          </div>
+          <h2>Síguenos en Instagram</h2>
+          <p>Descubre más momentos de calma, recetas y la vida detrás de cada taza.</p>
+          <a href="https://www.instagram.com/cafecalma_cl/?hl=es" target="_blank" rel="noopener noreferrer" class="btn btn-instagram" id="instagram-link">
+            @cafecalma_cl
+          </a>
+        </div>
+        <div class="instagram-preview">
+          <div class="insta-grid">
+            <div class="insta-cell"><img src="assets/images/hero.png" alt="Café Calma Instagram" loading="lazy" /></div>
+            <div class="insta-cell"><img src="assets/images/cafe-terraza.png" alt="Café Calma Instagram" loading="lazy" /></div>
+            <div class="insta-cell"><img src="assets/images/french-toast.png" alt="Café Calma Instagram" loading="lazy" /></div>
+            <div class="insta-cell"><img src="assets/images/cafe-branding.png" alt="Café Calma Instagram" loading="lazy" /></div>
+            <div class="insta-cell"><img src="assets/images/tostada-artesanal.png" alt="Café Calma Instagram" loading="lazy" /></div>
+            <div class="insta-cell"><img src="assets/images/hero.png" alt="Café Calma Instagram" loading="lazy" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT / LOCATION ═══════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Encuéntranos</span>
+        <h2 class="section-title">Ven a vivir<br /><span class="accent">la experiencia</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Ubicación</h3>
+            <p>Costanera Playa Grande<br />Pucón, Región de la Araucanía<br />En @la_casona_concept</p>
+            <a href="https://www.google.com/maps/place/Caf%C3%A9+Calma/@-39.2671141,-71.9729583,17.2z/data=!4m6!3m5!1s0x96147f0007f26645:0xd721e249dc9fe13e!8m2!3d-39.2679529!4d-71.9751657!16s%2Fg%2F11xml_4124?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="contact-map-link" id="map-link">
+              Ver en Google Maps →
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">🕐</div>
+            <h3>Horarios</h3>
+            <p>
+              Lunes a Domingo: 9:00 – 21:00<br />
+              ¡También feriados! 🐾 Petfriendly
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h3>Contacto</h3>
+            <p>hola@cafecalma.cl</p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/cafecalma_cl/?hl=es" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link" id="social-instagram">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map reveal">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.5!2d-71.9751657!3d-39.2679529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96147f0007f26645%3A0xd721e249dc9fe13e!2sCaf%C3%A9%20Calma!5e0!3m2!1ses!2scl!4v1"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación de Café Calma en Google Maps"
+              id="google-map"
+              sandbox="allow-scripts allow-same-origin allow-popups"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/profile.jpg" alt="Logo Café Calma" class="footer-logo-img" />
+          <span class="footer-logo-text">Café Calma</span>
+          <p class="footer-tagline">Donde la calma se sirve en taza.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navega</h4>
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a href="https://www.instagram.com/cafecalma_cl/?hl=es" target="_blank" rel="noopener noreferrer" class="footer-social-link" id="footer-instagram">
+            Instagram @cafecalma_cl
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Café Calma — Pucón, Chile. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ LIGHTBOX ═══════════════════ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+    <img src="" alt="Imagen ampliada" id="lightbox-img" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
